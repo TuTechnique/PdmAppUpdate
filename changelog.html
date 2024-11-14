@@ -1,19 +1,267 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body { font-family: Arial; }
-        .version { color: blue; }
-        .new { color: green; }
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --success-color: #2ecc71;
+            --warning-color: #f1c40f;
+            --danger-color: #e74c3c;
+            --text-color: #2c3e50;
+            --bg-color: #f8f9fa;
+            --border-radius: 8px;
+            --box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            padding: 20px;
+        }
+
+        .changelog-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .version-container {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: var(--box-shadow);
+        }
+
+        .version-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+        }
+
+        .version-number {
+            font-size: 1.5em;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-right: 10px;
+        }
+
+        .version-date {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .change-category {
+            margin: 15px 0 10px 0;
+        }
+
+        .category-title {
+            font-weight: 600;
+            font-size: 1.1em;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+
+        .category-title::before {
+            content: '';
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            margin-right: 8px;
+            border-radius: 50%;
+            background-color: currentColor;
+        }
+
+        .features .category-title {
+            color: var(--success-color);
+        }
+
+        .improvements .category-title {
+            color: var(--primary-color);
+        }
+
+        .fixes .category-title {
+            color: var(--danger-color);
+        }
+
+        .security .category-title {
+            color: var(--warning-color);
+        }
+
+        .change-list {
+            list-style: none;
+            margin-left: 26px;
+        }
+
+        .change-item {
+            position: relative;
+            padding: 4px 0;
+            font-size: 0.95em;
+            color: #444;
+        }
+
+        .change-item::before {
+            content: '';
+            position: absolute;
+            left: -15px;
+            top: 12px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: #ddd;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.75em;
+            font-weight: 500;
+            margin-left: 8px;
+            text-transform: uppercase;
+        }
+
+        .tag-new {
+            background-color: rgba(46, 204, 113, 0.15);
+            color: var(--success-color);
+        }
+
+        .tag-fix {
+            background-color: rgba(231, 76, 60, 0.15);
+            color: var(--danger-color);
+        }
+
+        .tag-improvement {
+            background-color: rgba(52, 152, 219, 0.15);
+            color: var(--primary-color);
+        }
+
+        .tag-security {
+            background-color: rgba(241, 196, 15, 0.15);
+            color: var(--warning-color);
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .version-container {
+                padding: 15px;
+            }
+
+            .version-number {
+                font-size: 1.2em;
+            }
+        }
     </style>
 </head>
 <body>
-    <h2 class="version">Phiên bản 2.0.0.0</h2>
-    <ul>
-        <li class="new">Thêm tính năng đăng nhập bằng Google</li>
-        <li class="improvement">Cải thiện tốc độ tải dữ liệu</li>
-        <li class="bug-fix">Sửa lỗi không hiển thị thông báo</li>
-    </ul>
+    <div class="changelog-container">
+        <!-- Phiên bản mới nhất -->
+        <div class="version-container">
+            <div class="version-header">
+                <span class="version-number">Phiên bản 2.0.0</span>
+                <span class="version-date">14 tháng 11, 2024</span>
+            </div>
+
+            <div class="change-category features">
+                <div class="category-title">Tính năng mới</div>
+                <ul class="change-list">
+                    <li class="change-item">
+                        Thêm tính năng đăng nhập bằng Google và Facebook
+                        <span class="tag tag-new">New</span>
+                    </li>
+                    <li class="change-item">
+                        Hỗ trợ xuất báo cáo dạng PDF
+                        <span class="tag tag-new">New</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="change-category improvements">
+                <div class="category-title">Cải tiến</div>
+                <ul class="change-list">
+                    <li class="change-item">
+                        Tối ưu hóa tốc độ tải dữ liệu, nhanh hơn 50%
+                        <span class="tag tag-improvement">Performance</span>
+                    </li>
+                    <li class="change-item">
+                        Giao diện người dùng được thiết kế lại
+                        <span class="tag tag-improvement">UI</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="change-category fixes">
+                <div class="category-title">Sửa lỗi</div>
+                <ul class="change-list">
+                    <li class="change-item">
+                        Khắc phục lỗi không hiển thị thông báo
+                        <span class="tag tag-fix">Bug</span>
+                    </li>
+                    <li class="change-item">
+                        Sửa lỗi crash khi xuất báo cáo lớn
+                        <span class="tag tag-fix">Bug</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="change-category security">
+                <div class="category-title">Bảo mật</div>
+                <ul class="change-list">
+                    <li class="change-item">
+                        Nâng cấp các thư viện bảo mật
+                        <span class="tag tag-security">Security</span>
+                    </li>
+                    <li class="change-item">
+                        Tăng cường mã hóa dữ liệu người dùng
+                        <span class="tag tag-security">Security</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Phiên bản cũ hơn -->
+        <div class="version-container">
+            <div class="version-header">
+                <span class="version-number">Phiên bản 1.9.0</span>
+                <span class="version-date">1 tháng 11, 2024</span>
+            </div>
+
+            <div class="change-category features">
+                <div class="category-title">Tính năng mới</div>
+                <ul class="change-list">
+                    <li class="change-item">
+                        Thêm tính năng sao lưu tự động
+                        <span class="tag tag-new">New</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="change-category improvements">
+                <div class="category-title">Cải tiến</div>
+                <ul class="change-list">
+                    <li class="change-item">
+                        Cải thiện giao diện mobile
+                        <span class="tag tag-improvement">UI</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
