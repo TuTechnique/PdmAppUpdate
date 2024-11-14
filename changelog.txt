@@ -1,5 +1,0 @@
-14.11.2024
-  - Ban hành version đầu tiên
-15.11.2024
-  - Cập nhật lỗi 1
-  - Cập nhập lỗi 2
