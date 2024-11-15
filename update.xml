@@ -1,6 +1,6 @@
 <item>
-    <version>2.0.0.0</version>
-    <url>https://github.com/TuTechnique/PdmAppUpdate/releases/download/2.0.0.0/PdmApp.zip</url>
+    <version>3.0.0.0</version>
+    <url>https://github.com/TuTechnique/PdmAppUpdate/releases/download/3.0.0.0/PdmApp.zip</url>
     <changelog>https://raw.githubusercontent.com/TuTechnique/PdmAppUpdate/main/changelog.html</changelog>
     <mandatory>false</mandatory>
 </item>
