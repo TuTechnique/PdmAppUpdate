@@ -29,6 +29,36 @@
       <changelog>https://raw.githubusercontent.com/TuTechnique/PdmAppUpdate/main/changelog.html</changelog>
       <mandatory>false</mandatory>
     </version>
+        <version>
+      <number>2.0.0.4</number>
+      <url>https://github.com/TuTechnique/PdmAppUpdate/releases/download/2.0.0.4/PdmApp.zip</url>
+      <changelog>https://raw.githubusercontent.com/TuTechnique/PdmAppUpdate/main/changelog.html</changelog>
+      <mandatory>false</mandatory>
+    </version>
+        <version>
+      <number>2.0.0.3</number>
+      <url>https://github.com/TuTechnique/PdmAppUpdate/releases/download/2.0.0.3/PdmApp.zip</url>
+      <changelog>https://raw.githubusercontent.com/TuTechnique/PdmAppUpdate/main/changelog.html</changelog>
+      <mandatory>false</mandatory>
+    </version>
+        <version>
+      <number>2.0.0.2</number>
+      <url>https://github.com/TuTechnique/PdmAppUpdate/releases/download/2.0.0.2/PdmApp.zip</url>
+      <changelog>https://raw.githubusercontent.com/TuTechnique/PdmAppUpdate/main/changelog.html</changelog>
+      <mandatory>false</mandatory>
+    </version>
+        <version>
+      <number>2.0.0.1</number>
+      <url>https://github.com/TuTechnique/PdmAppUpdate/releases/download/2.0.0.1/PdmApp.zip</url>
+      <changelog>https://raw.githubusercontent.com/TuTechnique/PdmAppUpdate/main/changelog.html</changelog>
+      <mandatory>false</mandatory>
+    </version>
+        <version>
+      <number>2.0.0.0</number>
+      <url>https://github.com/TuTechnique/PdmAppUpdate/releases/download/2.0.0.0/PdmApp.zip</url>
+      <changelog>https://raw.githubusercontent.com/TuTechnique/PdmAppUpdate/main/changelog.html</changelog>
+      <mandatory>false</mandatory>
+    </version>
   </versions>
     
 </item>
