@@ -1,10 +1,16 @@
 <item>
-    <version>2025.05.19.01</version>
-    <url>https://github.com/TuTechnique/PdmAppUpdate/releases/download/2025.05.19.01/PdmApp.zip</url>
+    <version>2025.05.20.01</version>
+    <url>https://github.com/TuTechnique/PdmAppUpdate/releases/download/2025.05.20.01/PdmApp.zip</url>
     <changelog>https://raw.githubusercontent.com/TuTechnique/PdmAppUpdate/main/changelog.html</changelog>
     <mandatory>false</mandatory>
 
     <versions>
+        <version>
+      <number>2025.05.20.01</number>
+      <url>https://github.com/TuTechnique/PdmAppUpdate/releases/download/2025.05.20.01/PdmApp.zip</url>
+      <changelog>https://raw.githubusercontent.com/TuTechnique/PdmAppUpdate/main/changelog.html</changelog>
+      <mandatory>false</mandatory>
+    </version>
         <version>
       <number>2025.05.19.01</number>
       <url>https://github.com/TuTechnique/PdmAppUpdate/releases/download/2025.05.19.01/PdmApp.zip</url>
